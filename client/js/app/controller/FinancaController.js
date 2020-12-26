@@ -111,4 +111,8 @@ export class FinancaController {
         }
     }
 
+    limpar() {
+        this._financasView.update(this._listaFinancas)
+    }
+
 }
