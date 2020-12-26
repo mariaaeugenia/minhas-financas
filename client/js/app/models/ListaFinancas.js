@@ -19,11 +19,11 @@ export class ListaFinancas {
         this._financas.reverse()
     }
 
-    filtra(dataFiltrada) {
-        return this._financas.filter(financa => financa._data.setHours(0,0,0,0).valueOf() === dataFiltrada.valueOf())
-    }
-
     get financas() {
         return [].concat(this._financas)
+    }
+
+    filtra(dataFiltrada) {
+        return this._financas.filter(financa => financa._data.setHours(0,0,0,0).valueOf() === dataFiltrada.valueOf())
     }
 }
