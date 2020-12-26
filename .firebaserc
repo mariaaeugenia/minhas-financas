@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "minhas-financas-b95a5"
+    "default": "minhas-financas-b95a5",
+    "finances": "minhas-financas-f527a"
   }
 }
