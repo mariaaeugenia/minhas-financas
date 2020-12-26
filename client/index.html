@@ -11,101 +11,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minhas finanças</title>
   </head>
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Minhas finanças
+  </a>
+</nav>
+
   <body class="container">
-    <div class="py-3 text-center">
-      <img
-        src="logo.svg"
-        style="width: 72px; height: 72px;"
-        alt="Logo Minhas Finanças"
-      />
-      <h1 class="h2 py-2">Minhas finanças</h1>
-    </div>
 
-    <div class="text-center">
-      <button type="button" id="btn-import" class="btn btn-primary">
-        Importar
-      </button>
-      <button type="button" id="btn-apaga" class="btn btn-primary">
-        Apagar
-      </button>
-    </div>
-
-    <div id="notificacaoView"></div>
-
-    <form>
-      <div class="form-group">
-        <label for="item">Item</label>
-        <input
-          type="text"
-          id="item"
-          class="form-control"
-          placeholder="Item"
-          value="cinema"
-          required
-        />
-      </div>
-      <div class="form-group">
-        <label for="data">Data</label>
-        <input
-          type="date"
-          id="data"
-          class="form-control"
-          value="2020-04-06"
-          required
-        />
-      </div>
-      <div class="form-row">
-        <div class="form-group col-6">
-          <label for="quantidade">Quantidade</label>
-          <input
-            type="number"
-            id="quantidade"
-            class="form-control"
-            min="1"
-            step="1"
-            value="1"
-            required
-          />
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide1.png" class="d-block w-100" alt="...">
         </div>
-        <div class="form-group col-6">
-          <label for="valor">Valor</label>
-          <input
-            type="number"
-            name=""
-            id="valor"
-            class="form-control"
-            min="1.00"
-            step="0.10"
-            value="1.00"
-            required
-          />
+        <div class="carousel-item">
+          <img src="images/slide2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide3.png" class="d-block w-100" alt="...">
         </div>
       </div>
-      <input type="submit" name="Enviar" id="" class="btn btn-primary" />
-    </form>
-    <div class="py-3">
-      <label for="filtro">Filtro</label>
-      <input
-          type="date"
-          id="filtro"
-          name=""
-          class="form-control"
-          value=""
-      />
-    </div>
-    <div>
-      <div class="text-center">
-      <button type="text" id="btn-filtro" class="btn btn-secondary">
-        Filtrar
-      </button>
-      <button type="text" id="btn-limpar" class="btn btn-light">
-        Limpar
-      </button>
-    </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
 
-    <div class="py-3" id="financasView"></div>
+    <br>
+
+    <div class="card">
+      <div class="card-header">
+        Destaque
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Controle de Finanças</h5>
+        <p class="card-text">Preencha o formulário com as informações necessárias; Filtre por data seus itens.</p>
+        <a href="form.html" class="btn btn-primary">Formulário</a>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="card">
+      <div class="card-header">
+        Quote
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>Parte de tomar boas decisões nos negócios é reconhecer suas más decisões do passado e por que elas foram ruins.</p>
+          <footer class="blockquote-footer"><cite title="Source Title">Warren Buffett</cite></footer>
+        </blockquote>
+      </div>
+    </div>
 
     <script src="./build/_boot.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
